@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Best Free ROI Calculator Online 2026 — Return on Investment</title>
+<meta name="description" content="Free online ROI calculator for Asia. Calculate your return on investment and marketing campaign profitability instantly in 1 click without registration.">
+<style>
+body{font-family:'Segoe UI',sans-serif;background:#f4f6f9;margin:0;padding:20px;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.box{background:#fff;padding:25px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.05);max-width:440px;width:100%;text-align:center}
+h2{text-align:center;margin-top:0;color:#1e293b}
+.form-group{margin-bottom:12px;text-align:left}
+label{display:block;margin-bottom:4px;font-weight:600;color:#475569;font-size:13px}
+input{width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:6px;box-sizing:border-box;font-size:14px;color:#334155}
+button{width:100%;padding:12px;background:#0284c7;border:none;color:#fff;font-weight:bold;border-radius:6px;cursor:pointer;margin-top:10px}
+button:hover{background:#0369a1}
+.res{margin-top:15px;padding:15px;display:none;background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;text-align:left;font-size:14px;line-height:1.5}
+.ad{display:none;margin-top:15px;min-height:100px;text-align:center}
+.faq{margin-top:20px;border-top:1px solid #e2e8f0;padding-top:15px;font-size:12px;color:#64748b;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="box">
+<h2>ROI Calculator</h2>
+<div class="form-group">
+<label>Total Investment Amount ($ or ₹):</label>
+<input type="number" id="cost" placeholder="E.g., 5000" required>
+</div>
+<div class="form-group">
+<label>Total Revenue Generated ($ or ₹):</label>
+<input type="number" id="revenue" placeholder="E.g., 15000" required>
+</div>
+<button onclick="calcROI()">Calculate ROI</button>
+<div id="resBox" class="res"></div>
+<div id="ads" class="ad"><div id="container-e8c895e6c70ade8e4ef4a72354f42e97"></div></div>
+<div class="faq">
+<h3>What is ROI and how to evaluate it?</h3>
+<p>ROI (Return on Investment) measures the profitability of a financial investment. An ROI of 100% means you completely returned your investment and earned the same amount on top. A negative percentage indicates financial loss.</p>
+</div>
+</div>
+<script>
+function showAds(){
+const c=document.getElementById('ads');
+if(!window.adScriptLoaded){
+window.atOptions={'key':'e8c895e6c70ade8e4ef4a72354f42e97','format':'iframe','height':90,'width':728,'params':{}};
+var s=document.createElement('script');s.type='text/javascript';s.async=!0;
+s.src=['https://','bagelstoppage.','com/','e8c895e6c70ade8e4ef4a72354f42e97/','invoke.js'].join('');c.appendChild(s);window.adScriptLoaded=!0
+}c.style.display='block'
+}
+function calcROI(){
+const investment=parseFloat(document.getElementById('cost').value);
+const revenue=parseFloat(document.getElementById('revenue').value);
+const box=document.getElementById('resBox');
+if(isNaN(investment)||isNaN(revenue)){alert('Please fill in all fields.');return}
+if(investment===0){alert('Investment amount cannot be zero.');return}
+const profit=revenue-investment;
+const roi=((profit/investment)*100).toFixed(1);
+const isProfit=parseFloat(roi)>=0;
+box.innerHTML='<strong>Net Profit:</strong> '+profit.toFixed(2)+'<br><strong>Return on Investment (ROI):</strong> <span style="font-weight:bold;color:'+(isProfit?'#16a34a':'#dc2626')+'">'+roi+'%</span>';
+box.style.display='block';
+showAds()
+}
+</script>
+<div style="display:none!important;visibility:hidden!important;opacity:0!important;width:0!important;height:0!important;position:absolute!important;top:-9999px!important;">
+<h2>Calculate return on investment online — ROI formula free India, Singapore</h2>
+<p>Measure profitability of your marketing and business advertisements with our financial simulator. Find net profit easily without complex tools.</p>
+<ul>
+<li>roi calculator online free india</li>
+<li>calculate return on investment formula singapore</li>
+<li>business profitability online calculator malaysia</li>
+</ul>
+</div>
+</body>
+</html>
